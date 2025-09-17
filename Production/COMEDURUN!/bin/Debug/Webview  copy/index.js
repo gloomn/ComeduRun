@@ -41,8 +41,8 @@ function connect() {
 
 //Teachable Machine
 async function startMachine() {
-    const modelURL = "https://teachablemachine.withgoogle.com/models/OUSdwo86T/" + "model.json";
-    const metadataURL = "https://teachablemachine.withgoogle.com/models/OUSdwo86T/" + "metadata.json";
+    const modelURL = "your pose model" + "model.json";
+    const metadataURL = "your pose model" + "metadata.json";
 
     model = await tmPose.load(modelURL, metadataURL);
     maxPredictions = model.getTotalClasses();
